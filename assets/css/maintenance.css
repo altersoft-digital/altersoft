@@ -1,0 +1,287 @@
+        @font-face {
+            font-family: 'Mont';
+            src: url('../fonts/Mont-Book.otf');
+            font-weight: 500;
+        }
+        
+        @font-face {
+            font-family: 'Mont';
+            src: url('../fonts/Mont-Light.otf');
+            font-weight: 400;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Mont';
+        }
+        
+        .container {
+            width: 100%;
+            margin: auto;
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        
+        html {
+            overflow: hidden;
+        }
+        
+        body {
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+        }
+        
+        .header,
+        .main,
+        .footer {
+            width: 100%;
+            overflow: hidden;
+        }
+        /* ----- HEADER START ----- */
+        
+        .header-container {
+            margin-top: 52px;
+        }
+        
+        .header-container a {
+            overflow: hidden;
+            width: 48px;
+            height: 48px;
+            display: grid;
+        }
+        
+        .header-container a svg {
+            width: 48px;
+        }
+        
+        .header-container a:hover svg path {
+            fill: #008FFF;
+        }
+        /* ----- HEADER END ----- */
+        /* ----- MAIN START ----- */
+        
+        .main {
+            margin-top: 136px;
+        }
+        
+        .header-title {
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            justify-items: center;
+            grid-gap: 12px;
+        }
+        
+        h1,
+        p,
+        span {
+            text-align: center;
+        }
+        
+        .header-title span {
+            font-size: 40px;
+            color: #99A1A7;
+        }
+        
+        h1 {
+            font-size: 96px;
+            line-height: 123px;
+            color: #001423;
+            font-weight: 500;
+        }
+        
+        .header-title p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #4D5B66;
+            max-width: 563px;
+            margin-top: 16px;
+        }
+        /* ----- MAIN END ----- */
+        /* ----- FOOTER START ----- */
+        
+        .footer {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            grid-gap: 52px;
+            margin-top: 120px;
+        }
+        
+        .footer-socials {
+            display: grid;
+            grid-gap: 32px;
+            grid-auto-flow: column;
+        }
+        
+        svg {
+            cursor: pointer;
+            pointer-events: none;
+        }
+        
+        svg path {
+            transition: fill 0.2s ease-in-out;
+        }
+        
+        .mail-icon:hover svg path {
+            fill: #008FFF;
+        }
+        
+        .linkedin-icon:hover svg path {
+            fill: #0961B8;
+        }
+        
+        .dribbble-icon:hover svg path {
+            fill: #EA4C89;
+        }
+        
+        .instagram-icon:hover svg path {
+            fill: #F2522F;
+        }
+        /* ----- MAIN END ----- */
+        /* ----- RESPONSIVES START ----- */
+        
+        @media only screen and (max-width: 1440px) {
+            h1 {
+                font-size: 64px;
+                line-height: normal;
+            }
+            .header-title span {
+                font-size: 32px;
+            }
+            .container {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .header-container {
+                margin-top: 32px;
+            }
+            .header-container a svg {
+                width: 32px;
+            }
+            .header-container a {
+                width: 32px;
+                height: 32px;
+            }
+            .main {
+                margin-top: 124px;
+            }
+        }
+        
+        @media only screen and (max-width: 1366px) {
+            h1 {
+                font-size: 52px;
+            }
+            .header-title span {
+                font-size: 24px;
+            }
+            .header-title p,
+            .footer p {
+                font-size: 16px;
+            }
+            .header-title p {
+                margin-top: 8px;
+            }
+            .footer-socials svg {
+                width: 24px;
+            }
+            .footer-socials {
+                grid-gap: 24px;
+            }
+            .footer {
+                grid-gap: 32px;
+            }
+            .main {
+                margin-top: 90px;
+            }
+        }
+        
+        @media only screen and (max-width: 1280px) {
+            .header-title p,
+            .footer p {
+                font-size: 14px;
+            }
+            .header-title p {
+                line-height: 24px;
+            }
+            .container {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            .header-container {
+                margin-top: 24px;
+            }
+            .header-container a svg {
+                width: 28px;
+            }
+            .header-container a {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        @media only screen and (max-width: 1024px) {
+            .main {
+                margin-top: 80px;
+            }
+            .footer {
+                margin-top: 80px;
+            }
+        }
+        
+        @media only screen and (max-width: 428px) {
+            h1 {
+                font-size: 36px;
+            }
+            .container {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .main {
+                margin-top: 64px;
+            }
+            .footer {
+                margin-top: 52px;
+            }
+        }
+        
+        @media only screen and (max-width: 360px) {
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+        
+        @media only screen and (max-width: 320px) {
+            h1 {
+                font-size: 32px;
+            }
+            .header-title span {
+                font-size: 20px;
+            }
+        }
